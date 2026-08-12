@@ -1,0 +1,19 @@
+name: readthedocs/actions (reusable)
+
+on:
+  workflow_call:
+    inputs:
+      project-slug:
+        required: true
+        type: string
+
+permissions:
+  pull-requests: write
+
+jobs:
+  pull-request-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: readthedocs/actions/preview@v1
+        with:
+          project-slug: ${{ inputs.project-slug }}
