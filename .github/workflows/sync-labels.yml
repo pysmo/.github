@@ -7,6 +7,10 @@ on:
         paths:
             - ".github/labels.yml"
             - ".github/workflows/sync-labels.yml"
+    pull_request:
+        paths:
+            - ".github/labels.yml"
+            - ".github/workflows/sync-labels.yml"
     workflow_dispatch:
     schedule:
         - cron: "0 4 * * 1" # Weekly on Monday at 04:00 UTC
@@ -45,3 +49,4 @@ jobs:
                   config-file: .github/labels.yml
                   repository: ${{ matrix.repo }}
                   delete-other-labels: false
+                  dry-run: ${{ github.ref != 'refs/heads/main' }}
