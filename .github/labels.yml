@@ -1,0 +1,53 @@
+# Standard GitHub Issue & PR Labels for the pysmo organization
+# Color hex codes are 6 characters without the '#' prefix.
+
+# Core types
+- name: "bug"
+  color: "fc2929"
+  description: "Something isn't working as expected"
+
+- name: "enhancement"
+  color: "84b6eb"
+  description: "New feature or enhancement request"
+
+- name: "documentation"
+  color: "0e8a16"
+  description: "Improvements or additions to documentation"
+
+- name: "question"
+  color: "cc317c"
+  description: "Further information or clarification requested"
+
+# Community / triage
+- name: "good first issue"
+  color: "7057ff"
+  description: "Good for newcomers"
+
+- name: "help wanted"
+  color: "008672"
+  description: "Extra attention is needed"
+
+- name: "duplicate"
+  color: "cccccc"
+  description: "This issue or pull request already exists"
+
+- name: "invalid"
+  color: "e6e6e6"
+  description: "This doesn't seem right or is no longer applicable"
+
+- name: "wontfix"
+  color: "ffffff"
+  description: "This will not be worked on"
+
+# Automated / Ecosystem
+- name: "dependencies"
+  color: "0366d6"
+  description: "Pull requests that update a dependency file"
+
+- name: "python"
+  color: "2b67c6"
+  description: "Pull requests or issues that affect Python code"
+
+- name: "github_actions"
+  color: "000000"
+  description: "Pull requests that update GitHub Actions workflows"
