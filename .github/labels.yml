@@ -27,6 +27,18 @@
   color: "008672"
   description: "Extra attention is needed"
 
+- name: "triaged"
+  color: "0052cc"
+  description: "Confirmed and accepted into the backlog"
+
+- name: "needs info"
+  color: "fbca04"
+  description: "Waiting on additional details/reproduction from author"
+
+- name: "blocked"
+  color: "b60205"
+  description: "Blocked on external dependency or upstream changes"
+
 - name: "duplicate"
   color: "cccccc"
   description: "This issue or pull request already exists"
@@ -38,6 +50,15 @@
 - name: "wontfix"
   color: "ffffff"
   description: "This will not be worked on"
+
+# Lifecycle & Stale Management
+- name: "stale"
+  color: "6a737d"
+  description: "No recent activity; scheduled for automated closure"
+
+- name: "keep-open"
+  color: "1d76db"
+  description: "Exempt from automated stale/closure policies"
 
 # Automated / Ecosystem
 - name: "dependencies"
