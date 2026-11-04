@@ -40,7 +40,7 @@ jobs:
                 repo: ${{ fromJson(needs.discover-repos.outputs.repos) }}
         steps:
             - name: Checkout repository
-              uses: actions/checkout@v4
+              uses: actions/checkout@v7
 
             - name: Sync labels to ${{ matrix.repo }}
               uses: EndBug/label-sync@v2
