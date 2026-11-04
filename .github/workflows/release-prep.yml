@@ -24,7 +24,7 @@ jobs:
             echo "::error::'${{ inputs.version }}' does not match vX.Y.Z, vX.Y.ZrcN or vX.Y.Z.devN"
             exit 1
           fi
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
           token: ${{ secrets.RELEASE_TOKEN }}
